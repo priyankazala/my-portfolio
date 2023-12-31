@@ -15,8 +15,6 @@ const Header = () => {
           typeSpeed={100}
           loop
           backSpeed={20}
-          cursorChar="|"
-          showCursor={true}
           className="header-content"
         />
       </div>
