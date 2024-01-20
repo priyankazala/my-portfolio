@@ -1,0 +1,43 @@
+[
+  {
+    "role": "Graduate Teaching Assistant",
+    "organisation": "Stevens Institute of Technology",
+    "startDate": "Sept, 2023",
+    "endDate": "Present",
+    "experiences": ["Graded assignments and Examinations. Helped with code evaluation.", "Tutored students with struggling with the course"],
+    "imageSrc": "history/stevens.png"
+  },
+  {
+    "role": "Data Science & Business Analytics Intern",
+    "organisation": "The Sparks Foundation",
+    "startDate": "Mar, 2021",
+    "endDate": "Apr, 2021",
+    "experiences": ["Employed k-means clustering on the iris dataset for a nuanced analysis, identifying the ideal petal size for iris blooms.", "Ensured dataset reliability through meticulous data cleaning, laying a strong foundation for meaningful insights.", "Applied advanced machine learning techniques to effectively group iris blooms based on petal size, showcasing proficiency in data science fundamentals."],
+    "imageSrc": "history/Sparks.png"
+  },
+  {
+    "role": "Software Developer Intern",
+    "organisation": "Creative Finserve Pvt. Ltd",
+    "startDate": "Mar, 2020",
+    "endDate": "Nov, 2020",
+    "experiences": [
+      "Worked on component libraryLed the end-to-end development, migration, and deployment of the company's CRM portal using Django, SQL, HTML, CSS, and JavaScript.",
+      "Collaborated effectively with team members to ensure the timely delivery of the project, showcasing strong teamwork and project management skills.",
+      "Improved user experience by implementing a new search feature, resulting in a remarkable 70% increase in efficiency for accessing and retrieving customer information within the CRM system."
+    ],
+    "imageSrc": "history/finserv.png"
+  }
+  ,
+  {
+    "role": "Web Developer Intern",
+    "organisation": "Sahu Technologies Pvt. Ltd",
+    "startDate": "June, 2019",
+    "endDate": "July, 2019",
+    "experiences": [
+      "Expertly designed website login and signup pages using HTML, CSS, and JavaScript, showcasing proficiency in web design.",
+      "Collaborated seamlessly with the development team to ensure a smooth integration of design elements, emphasizing a cohesive user interface.",
+      "Improved user experience by creating an intuitive and user-friendly interface for login and signup pages, while learning and applying industry best practices in front-end web development."
+    ],
+    "imageSrc": "history/sahu.png"
+  }
+]

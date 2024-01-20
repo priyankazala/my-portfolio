@@ -1,0 +1,36 @@
+[{
+  "title":"Real time Cricket Updates Website",
+  "description": "Developed a live cricket updates website with a user-friendly interface using React.js. Implemented live commentary, player stats, and real-time chat features.",
+  "technologies": ["React.js", "Firebase", "MongoDB", "Elasticsearch", "Socket.io", "Redis", "Amazon EC2"],
+  "image": "projects/cricket.jpg",
+  "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+},
+{
+ "title": "Web Platform for Fitness Enthusiasts",
+  "description":
+    "Built a comprehensive platform for fitness enthusiasts, featuring exercise articles, yoga postures, and connections among users. Implemented a user-friendly interface using NodeJS, ExpressJS, MongoDB, and Bootstrap.",
+  "technologies": ["NodeJS", "ExpressJS", "MongoDB", "Bootstrap", "HTML", "CSS", "JavaScript"],
+  "image": "projects/fitness.png",
+  "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+},
+{
+  "title": "Predicting Hazardous NEOs with Machine Learning",
+  "description":
+    "Utilized advanced machine learning algorithms to analyze vast astronomical datasets, enabling the accurate identification and analysis of Near-Earth Objects (NEOs).",
+  "technologies": ["Machine Learning", "Logistic Regression", "Python", "Sci-kit Learn", "Tensorflow"],
+  "image": "projects/meteor.jpg",
+  "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+},
+{
+  "title": "Car Price Site",
+  "description":
+    "Developed a live cricket updates website with a user-friendly inte/rface using React.js. Implemented live commentary, player stats, and real-time chat features.",
+  "technologies": ["React.js", "Firebase", "MongoDB", "Elasticsearch", "Socket.io", "Redis", "Amazon EC2"],
+  "image": "projects/car.jpg",
+  "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+}]
+
