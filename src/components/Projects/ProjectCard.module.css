@@ -1,51 +1,52 @@
 @import "../../vars.css";
 
-.container {
+.container{
+  width: 20vw;
+  height: 40vh;
+  border-radius: 2rem;
+  position: relative;
+  justify-content: center;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+  
+}
+.frontside {
   display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
-  box-shadow: 0 16px 14px 0 #04152d;
-  padding: 18px 24px;
-  max-width: 345px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: transparent;
+  border: 2px solid var(--color-highlight);
+  top: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+  
 }
 
 .image {
-  margin-bottom: 26px;
+  width:15vw;
+  height: 35vh;
+  border-radius: 2rem;
+  
 }
 
 .title {
-  font-size: 25px;
-  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
 }
 
 .description {
   margin-top: 6px;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 400;
-}
-
-.skills {
-  width: 100%;
-  margin-top: 14px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 6px;
-  list-style: none;
-}
-
-.skill {
-  font-size: 25px;
-  font-weight: 400;
-  border-radius: 100px;
-  background: var(--color-dark);
-  padding: 2px 22px;
+ 
 }
 
 .links {
   width: 100%;
-  margin-top: 26px;
   display: flex;
   justify-content: space-around;
 }
@@ -53,9 +54,35 @@
 .link {
   text-decoration: none;
   color: var(--color-text);
-  font-size: 30px;
-  font-weight: 600;
-  border-radius: 100px;
-  background: var(--color-primary);
+  font-size: 18px;
+  border-radius: 25%;
+  border: 1px salmon solid;
+  background: var(--color-highlight);
   padding: 1px 22px;
 }
+
+
+.frontside, .flipside {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  border: 2px solid var(--color-highlight);
+  position: absolute;
+  color: var(--color-text);
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container:hover{
+    cursor: pointer;
+    transform: rotateX(180deg) rotateZ(-180deg);
+    pointer-events:all;
+  }
+  .flipside {
+    
+    transform: rotateX(180deg) rotateZ(-180deg);
+  }

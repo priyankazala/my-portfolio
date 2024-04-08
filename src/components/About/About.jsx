@@ -6,43 +6,51 @@ import { getImageUrl } from "../../utils";
 export const About = () => {
   return (
     <section className={styles.container} id="about">
-      <h2 className={styles.title}>About</h2>
+      <h1 className={styles.title}>More than just a name...</h1>
       <div className={styles.content}>
-        <img
-          src={getImageUrl("about/priyankazala.jpg")}
-          alt="Me sitting with a laptop"
-          className={styles.aboutImage}
-        />
-        <ul className={styles.aboutItems}>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
-            <div className={styles.aboutItemText}>
-              <h3>Web Developer</h3>
-              <p>
-                I'm a full-stack developer with experience in building responsive
-                and optimized sites
-              </p>
-            </div>
-          </li>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" />
-            <div className={styles.aboutItemText}>
-              <h3>Software Developer</h3>
-              <p>
-              I am an agile software developer dedicated to crafting efficient solutions and enhancing user experiences through cutting-edge development practices.
-              </p>
-            </div>
-          </li>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
-            <div className={styles.aboutItemText}>
-              <h3>Machine Learning Innovator</h3>
-              <p>
-              I leverage machine learning to analyze data, extract insights, and innovate.
-              </p>
-            </div>
-          </li>
-        </ul>
+        <div className={styles.image_container}>
+          <div className={styles.socialLinks}>
+            <a href="https://www.linkedin.com/in/pzala/" target="_blank">
+              <img
+                src={getImageUrl("contact/linkedinIcon.png")}
+                alt="LinkedIn icon"
+              />
+            </a>
+            <a href="https://github.com/priyankazala/" target="_blank">
+              <img
+                src={getImageUrl("contact/githubIcon.png")}
+                alt="Github icon"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div className={styles.text_container}>
+          <p className={styles.paragraph}>
+            {" "}
+            I'm a detail-oriented IT professional with a passion for building
+            seamless web experiences. I believe in the power of technology to
+            simplify our lives and am committed to crafting user-friendly
+            interfaces that prioritize usability and accessibility. With
+            expertise in HTML, CSS, and JavaScript, I specialize in translating
+            design concepts into visually appealing and intuitive websites. From
+            responsive design to performance optimization, I adhere to UI/UX
+            principles to ensure a smooth and enjoyable browsing experience for
+            every user. Driven by a desire to innovate and adapt, I'm constantly
+            learning and staying abreast of the latest industry trends. Let's
+            connect and collaborate to create exceptional digital experiences
+            together.
+          </p>
+          <h2>
+            <a
+              href="https://drive.google.com/file/d/139scU094lEKgWswZfQur8CE9jwMjivUE/view?usp=sharing"
+              className={styles.resume}
+              target="_blank"
+            >
+              See my Resume!
+            </a>
+          </h2>
+        </div>
       </div>
     </section>
   );

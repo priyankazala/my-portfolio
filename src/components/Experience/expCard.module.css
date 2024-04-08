@@ -1,0 +1,73 @@
+.card{
+  display: flex;
+  flex-direction: row;  
+  transition: 0.5s;
+  padding: 8px;
+  height: 300px;
+  
+
+  
+}
+.card > .cardcontent{
+  padding: 6px;
+  
+}
+
+.date{
+  display:block;
+  font-size: 18px;
+  font-weight:500;
+}
+.cardtitle{
+  font-size: 30px;
+  font-weight: 900;
+
+}
+
+.position{
+
+  font-size: 20px;
+  font-weight: 700;
+
+}
+
+.imagediv{
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: antiquewhite;
+  }
+
+.image{
+  width: 100px;
+  height: 100px;
+  
+  
+}
+
+.expList{
+  list-style: none;
+  font-size: 15px;
+  font-weight: 200;
+  margin-top: 10px;
+  color :var(--color-text);
+  transform: translateY(-80px) scale(0);
+  transition: all 0.5s;
+}
+.text{
+  transform: translateY(0) scale(1);
+  transition: all 0.5s;
+}
+
+.card:hover .text{
+  transform: translateY(-10px) scale(0.8);
+
+}
+.card:hover .expList {
+  transform: translateY(0) scale(1);
+}
+
+
+@media screen and (max-width: 678){
+  
+}
