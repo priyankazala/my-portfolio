@@ -3,12 +3,11 @@
 .container {
   color: var(--color-text);
   margin-top: 120px;
-  background-color: var(--color-secondary);
   display: grid;
   grid-auto-flow: row;
   justify-content: space-evenly;
   width: 90vw;
-  height: 100vh; 
+  height: 10vh; 
   padding: 58px 10%;
   gap: 10px;
 }

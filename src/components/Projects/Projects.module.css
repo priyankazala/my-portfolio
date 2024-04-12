@@ -6,7 +6,7 @@
   min-height:100vh;
   display: grid;
   padding-right: 30vw;
-  background-color: var(--color-bg4);
+  
 }
 
 .title {
@@ -21,7 +21,10 @@
   display: grid;
   grid-auto-flow: row;
   grid-template-columns: 1fr 1fr 1fr;
+  width: 90vw;
+  border: 1px  solid black;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   padding: 5px;
   
