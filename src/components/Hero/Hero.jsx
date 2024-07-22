@@ -1,9 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import { getImageUrl } from "../../utils";
-import { Link } from "react-router-dom";
-// import { CSSTransition } from "react-transition-group";
-
+import Pdf from "../../../assets/hero/resume.pdf";
 export const Hero = () => {
   const onClick = () => {
     window.location.href = "#contact";
@@ -23,7 +20,7 @@ export const Hero = () => {
             <span className={styles.box}>contact</span>
           </button>
           <button href="../assets/hero/resume.pdf">
-            <a href="dist/assets/resume-8aa4f002.pdf" target="_blank">
+            <a href={Pdf} target="_blank">
               <span className={styles.box}>Resume</span>
             </a>
           </button>
