@@ -3,6 +3,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Futura","Montserrat","Avenir","Bebas Neue","Lemon-milk";
-  
+  font-family: "Futura", "Montserrat", "Avenir", "Bebas Neue", "Lemon-milk";
+  scroll-behavior: smooth;
 }

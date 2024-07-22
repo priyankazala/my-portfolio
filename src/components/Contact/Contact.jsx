@@ -1,5 +1,5 @@
 import React from "react";
-
+// import { contactForm } from "./contactForm";
 import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
 
@@ -8,23 +8,30 @@ export const Contact = () => {
     <section id="contact" className={styles.container}>
       <div className={styles.text}>
         <h2 className={styles.title}>Contact</h2>
+        {/* <contactForm /> */}
         <p>Feel free to reach out!</p>
       </div>
       <ul className={styles.links}>
         <li className={styles.link}>
-          <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
-          <a href="mailto:myemail@email.com">priyankazala9999@gmail.com</a>
+          <a href="mailto:priyankazala9999@gmail.com">
+            <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
+          </a>
         </li>
         <li className={styles.link}>
-          <img
-            src={getImageUrl("contact/linkedinIcon.png")}
-            alt="LinkedIn icon"
-          />
-          <a href="https://www.linkedin.com/myname">https://www.linkedin.com/in/pzala</a>
+          <a href="https://www.linkedin.com/in/pzala">
+            <img
+              src={getImageUrl("contact/linkedinIcon.png")}
+              alt="LinkedIn icon"
+            />
+          </a>
         </li>
         <li className={styles.link}>
-          <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
-          <a href="https://www.github.com/myname">https://github.com/priyankazala/</a>
+          <a href=" https://github.com/priyankazala/">
+            <img
+              src={getImageUrl("contact/githubIcon.png")}
+              alt="Github icon"
+            />
+          </a>
         </li>
       </ul>
     </section>

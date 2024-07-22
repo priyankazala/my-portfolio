@@ -1,184 +1,94 @@
 @import "../../vars.css";
 
-
-
-h2{
-  font-size: 24px;
-  text-align: center;
-}
-
 .container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  min-height: 100vh; 
-  
+  height: 100vh;
+  /* display: grid;
+  grid-template-rows: 1fr 1fr 1fr; */
+  background: linear-gradient(#84a3a1 0%, #aec3b0 100%);
 }
 
 .title {
+  display: block;
   font-size: 32px;
-  font-weight: 600;
-  letter-spacing: 1.50px;
-  text-transform: uppercase;
-  color:var(--color-text);
-
+  color: #eff6e0;
+  text-align: center;
+  padding-top: 4%;
 }
 
 .content {
   display: grid;
-  grid-template-columns: auto 1fr ; 
-  padding-right: 20vw;
-  padding-left: 5vw;
-  color:var(--color-text);
-  
+  grid-template-columns: auto 1fr;
+  justify-content: space-between;
+  color: var(--color-text);
+  color: #eff6e0;
+  padding: 10%;
 }
 
-
-.image_container{
+.image_container {
   position: relative;
   width: 350px;
   height: 350px;
-  top: calc(350px -100% );
+  top: calc(350px -100%);
+  border-radius: 20% 20% 0;
   align-items: center;
-  overflow: visible;
-  border-radius: 50%;
-  border: 2px  double goldenrod;
-  padding: 0;
-  opacity: 1;
-  background: url("../../../assets/about/priyankazala.jpg") no-repeat center / cover;
-  transition: opacity  0.8s ease-in-out;
-}
-.socialLinks {
-
-  position: relative;
-  display: flex;
-  width: 175px;
-  height: 175px;
-  top: calc(80%);
-  align-items: center;
-  overflow: hidden;
-  border-radius: 50%;
-  border: 1px  solid goldenrod;
-  flex-direction: row;
-  justify-content: center;
-  gap: 26px;
-  background-color: var(--color-highlight);
-  
+  background: url("../../../assets/about/priyankazala.jpg") no-repeat center /
+    cover;
 }
 
-.image_container:hover .socialLinks{
-  
-  transform: scale(1);
-  width: 350px;
-  height: 350px;
-  top: calc(100% - 350px);
-  background-color: rgba(0, 0, 0, .7);
-  opacity: 1;
-  transition: all 1s ease-in;
-  
-
-  
-  
-}
-.image_container:hover .image_container{
-    opacity:  0.9;
-    
-  }
-
-.text_container{
+.text_container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.paragraph{
+.paragraph {
   text-align: justify;
-  font-size: 18px;
-  padding: 5px;
-  margin: 3px;
-  
+  font-weight: 300;
+  font-size: 1.3rem;
+  width: 90%;
+  line-height: 1.6rem;
+  padding: 0.5rem 0 2rem 0;
 }
 
 .resume {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  color:  var(--color-text);
-  font-size: 36px;
-  background-image: linear-gradient(gold, gold);
-  background-size: 0% 100%;
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-  transition: background-size   .7s ease-in-out;
-}
-
-
-.resume:hover {
-  background-size: 100% 100%;
-  background-position: 0% 0%;
-  transition: background-size   .5s ease-in-out;
-}
-
-
-
-@media screen and (max-width:768px){
-
-  .container{
-  flex-direction: column;
-  }
-  
-.content {
-  display: flex;
-  flex-direction: column;
+  background-color: #0a2e3c;
+  font-size: 1.5rem;
+  color: #eff6e0;
   padding: 10px;
-  color:var(--color-text);
-}
-
-
-.image_container{
-  position: relative;
-  width: 70vw;
-  height: 40vh;
-  top: calc(100% - 500px);
-  align-items: center;
-  overflow: hidden;
-  border-radius: 40%;
-  border: 2px  solid goldenrod;
-  padding: 0;
-  opacity: 0.9;
-  background: url("../../../assets/about/priyankazala.jpg") no-repeat center / cover;
-  transition: opacity  0.8s ease-in-out;
-}
-
-.paragraph{
-  text-align: justify;
-  font-size: 12px;
-  padding: 5px;
-  margin: 3px;
-  
-}
-
-.resume {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  color:  var(--color-text);
-  font-size: 18px;
-  background-image: linear-gradient(var(--color-highlight),var(--color-highlight));
+  border-radius: 12px;
+  background-image: linear-gradient(#598392, #9ad5ea);
   background-size: 0% 100%;
   background-repeat: no-repeat;
   background-position: 100% 100%;
-  transition: background-size   .7s ease-in-out;
+  transition: background-size 0.7s ease-in-out;
 }
-
 
 .resume:hover {
   background-size: 100% 100%;
   background-position: 0% 0%;
-  transition: background-size   .5s ease-in-out;
+  transition: background-size 0.5s ease-in-out;
 }
+
+@media screen and (max-width: 768px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .paragraph {
+    font-size: 0.9rem;
+  }
+  .resume {
+    font-size: 1.5rem;
+  }
+
+  .image_container {
+    position: relative;
+    align-self: center;
+    width: 220px;
+    height: 160px;
+  }
 }

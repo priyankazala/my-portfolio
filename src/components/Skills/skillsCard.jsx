@@ -12,7 +12,7 @@ const [isExpanded, setIsExpanded] = useState(false);
       <img src= {getImageUrl(imgSrc)} alt="Skills" />
       </div>
       <h2 className={styles.cardtitle}>{title}</h2>
-      {/* <p className={styles.cardcontent}>{content}</p> */}
+      <p className={styles.cardcontent}>{content}</p>
     </div>
   );
 };
