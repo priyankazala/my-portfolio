@@ -8,7 +8,7 @@ export const Contact = () => {
     <section id="contact" className={styles.container}>
       <div className={styles.text}>
         <h2 className={styles.title}>Contact</h2>
-        {/* <contactForm /> */}
+
         <p>Feel free to reach out!</p>
       </div>
       <ul className={styles.links}>

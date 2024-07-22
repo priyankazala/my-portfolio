@@ -1,11 +1,8 @@
 import React from "react";
-
 import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utils";
 
-export const ProjectCard = ({
-  project: { title, image, description, skills, demo, source },
-}) => {
+export const ProjectCard = ({ project: { title, image, source } }) => {
   return (
     <div className={styles.container}>
       <div className={styles.frontside}>
