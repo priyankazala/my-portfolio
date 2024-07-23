@@ -7,7 +7,7 @@ export const Skills = () => {
   return (
     <section className={styles.container} id="skills">
       <h1 className={styles.title}>Tech I worked with</h1>
-      <div className={styles.contentGrid} ref={skillRef}>
+      <div className={styles.contentGrid}>
         {skills.map((skill, id) => {
           return (
             <Card
