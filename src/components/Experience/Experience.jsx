@@ -1,42 +1,54 @@
 // Experience.js
 import { React } from "react";
 import styles from "./Experience.module.css";
-import { Card } from "./expCard";
 import history from "../../data/history.json";
-import education from "../../data/education.json";
-import { getImageUrl } from "../../utils";
+import Timeline from "@mui/lab/Timeline";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineDot from "@mui/lab/TimelineDot";
+import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import Typography from "@mui/material/Typography";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export const Experience = () => {
+  const isSmallScreen = useMediaQuery("(max-width: 600px)");
+
   return (
     <section className={styles.container} id="experience">
       <div className={styles.title} id="experienceTitle">
-        Education
+        My Journey
       </div>
-      {education.map((educationItem, id) => (
-        <div key={id}>
-          <Card
-            company={educationItem.company}
-            position={educationItem.position}
-            imageSrc={getImageUrl(educationItem.imageSrc)}
-            content={educationItem.experiences}
-            startDate={educationItem.year}
-          />
-        </div>
-      ))}
-      <div className={styles.title} id="experienceTitle">
-        Experience
-      </div>
-      {history.map((historyItem, id) => (
-        <div key={id}>
-          <Card
-            company={historyItem.company}
-            position={historyItem.position}
-            imageSrc={getImageUrl(historyItem.imageSrc)}
-            content={historyItem.experiences}
-            startDate={historyItem.year}
-          />
-        </div>
-      ))}
+      <Timeline position={isSmallScreen ? "right" : "alternate"}>
+        {history.map((historyItem, id) => (
+          <TimelineItem key={id}>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              align="right"
+              variant="body2"
+              position="alternate"
+            >
+              {historyItem.year}
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot variant="outlined" />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <Typography
+                variant={isSmallScreen ? "h5" : "h3"}
+                component="span"
+              >
+                {historyItem.company}
+              </Typography>
+              <Typography variant="subtitle2">
+                {historyItem.position}
+              </Typography>
+            </TimelineContent>
+          </TimelineItem>
+        ))}
+      </Timeline>
     </section>
   );
 };

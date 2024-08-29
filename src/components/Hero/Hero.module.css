@@ -10,9 +10,11 @@
 }
 .herodiv {
   position: relative;
+  display: flex;
+  flex-direction: column;
   width: 90vw;
-  height: 60vh;
   top: 20%;
+  padding: 10vh 0 10vh 0;
   align-items: center;
   justify-content: center;
   border: solid 1px rgb(254, 254, 254);
@@ -20,12 +22,12 @@
 
 .title {
   font-size: 64px;
-  padding-top: 10%;
   color: #eff6e0;
   text-align: center;
 }
 .subtitle {
   padding: 10px;
+  width: 80%;
   text-align: center;
   color: #eff6e0;
 }

@@ -11,7 +11,7 @@ export const Card = ({
 }) => {
   return (
     <div className={styles.card}>
-      <div className={styles.imagediv}>
+      {/* <div className={styles.imagediv}>
         <img src={imageSrc} alt="image" className={styles.image} />
       </div>
       <div className={styles.cardcontent}>
@@ -33,7 +33,7 @@ export const Card = ({
             );
           })}
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };
