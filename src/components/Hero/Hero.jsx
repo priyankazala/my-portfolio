@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import Pdf from "../../../assets/hero/resume.pdf";
+import Pdf from "../../../assets/hero/PriyankaZala.pdf";
 export const Hero = () => {
   const onClick = () => {
     window.location.href = "#contact";
