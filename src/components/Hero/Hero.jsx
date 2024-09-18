@@ -19,7 +19,7 @@ export const Hero = () => {
           <button onClick={onClick}>
             <span className={styles.box}>contact</span>
           </button>
-          <button href="../assets/hero/resume.pdf">
+          <button href="../assets/hero/PriyankaZala.pdf">
             <a href={Pdf} target="_blank">
               <span className={styles.box}>Resume</span>
             </a>
